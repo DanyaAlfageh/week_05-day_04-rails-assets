@@ -48,7 +48,7 @@ Include any styles written in the `application.css` itself.  Although for the mo
 
 If we do not want to use `require_tree .` we can include files individually by using their filename.  This is also useful for when we need to include files from other libararies that are not in our `app/assets/stylesheets/` folder.
 
-### Pro-Tip
+**Pro-Tip**
 
 CSS cascading and specificity can be tricky when all of the styelsheets are compiled to one file. 
 
@@ -108,7 +108,7 @@ Include all files in the the `app/assets/javascripts/` folder.
 
 If we do not want to use `require_tree .` we can include files individually by using their filename.  This is also useful for when we need to include files from other libararies that are not in our `app/assets/javascripts/` folder.
 
-### jQuery
+#### jQuery
 
 Include the [jquery-rails gem](https://github.com/rails/jquery-rails) and `bundle install`.
 ```rb
@@ -120,7 +120,7 @@ Require jQuery in your `app/assets/javascripts/application.js`
 //= require jquery
 ```
 
-### Pro-Tip 
+**Pro-Tip** 
 
 ```js
 // jQuery
@@ -140,7 +140,7 @@ document.addEventListener("turbolinks:load", function() {
 
 Images should be stored in the `app/assets/images/` folder as an example `app/assets/images/cat.png`.
 
-### In HTML
+#### In HTML
 
 Use the `image_tag` with a relative path from the `app/assets/images` folder:
 ```html
@@ -148,7 +148,7 @@ Use the `image_tag` with a relative path from the `app/assets/images` folder:
 <%= image_tag "cat.png" %>
  ```
  
-### In SASS
+#### In SASS
  
  Use `image-url` with a relative path from the `app/assets/images` folder:
 ```css
@@ -157,7 +157,7 @@ Use the `image_tag` with a relative path from the `app/assets/images` folder:
 }
 ```
  
-### In JS
+#### In JS
 
 Change file type from `.js` to `.js.erb`, as an example `app/assets/javascripts/books.js.erb`.
 
