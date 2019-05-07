@@ -177,3 +177,4 @@ $("body").append("<img src=" + "<%= asset_path('cat.jpg') %>" + "/>")
 
 - https://guides.rubyonrails.org/asset_pipeline.html
 - https://guides.rubyonrails.org/working_with_javascript_in_rails.html
+- https://mattboldt.com/organizing-css-and-sass-rails/ (how to use sass variables with asset pipeline)
