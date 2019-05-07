@@ -106,6 +106,8 @@ Include all files in the the `app/assets/javascripts/` folder.
 
 **`//= require books`**
 
+If we do not want to use `require_tree .` we can include files individually by using their filename.  This is also useful for when we need to include files from other libararies that are not in our `app/assets/javascripts/` folder.
+
 ### jQuery
 
 Include the [jquery-rails gem](https://github.com/rails/jquery-rails) and `bundle install`.
@@ -134,7 +136,6 @@ document.addEventListener("turbolinks:load", function() {
 })
 ```
 
- 
 ## Images
 
 Images should be stored in the `app/assets/images/` folder as an example `app/assets/images/cat.png`.
@@ -158,7 +159,7 @@ Use the `image_tag` with a relative path from the `app/assets/images` folder:
  
 ### In JS
 
-Change file type from `.js` to `.js.erb`, as an example `books.js.erb`.
+Change file type from `.js` to `.js.erb`, as an example `app/assets/javascripts/books.js.erb`.
 
 Use the `asset_path` inside of an erb block.
 
